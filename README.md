@@ -8,14 +8,13 @@ On a Mac, you'll need to have [Growl](http://growl.info/) and [growlnotify](http
 
 On Windows, you should just need [Growl for Windows](http://www.growlforwindows.com/).
 
-Once you've got Growl set up, just add `barista_growl` to your project's Gemfile and `bundle install`.
+Once you've got Growl set up, just add `barista` and `barista_growl` to your project's Gemfile and `bundle install`. The relevant lines of your Gemfile might look like this
 
-## Dependencies
+    gem 'barista'
+    gem 'barista_growl', :git => 'http://github.com/TrevorBurnham/barista_growl.git'
 
-When you add `barista_growl` to your project's Gemfile, the following gems will be added as well:
-
-  * `[barista](http://github.com/Sutto/barista/)`
-  * `[growl](http://github.com/visionmedia/growl/)`
+When you add `barista_growl` to your project's Gemfile, the `[growl](http://github.com/visionmedia/growl/)` gem will be added
+automatically if not already present.
 
 ## License
 
